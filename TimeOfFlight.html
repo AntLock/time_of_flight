@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="time_of_flight.js"></script>
+
+</head>
+<body> 
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-6">
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="previousFrame()">Previous Frame</button> 
+  <button onclick="nextFrame()">Next Frame</button> 
+  <button onclick="takeOff()" id='takeOff' >Take off Skill 1</button> 
+  <button onclick="landingSkill()" style="display: none;" id='landing'>Landing Skill 1</button> 
+
+  <br><br>
+  <video id="video1" width="400">
+    <source src="set.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+</div>
+
+      <div class="col-lg-6">
+
+<div style="text-align:center"> 
+<table style="width:60%" id='tof-table'>
+  <tr>
+    <th>Skill</th>
+    <th>Time Of Skill</th> 
+    <th>Delta</th>
+  </tr>
+</table>
+</div> 
+</div>
+</div>
+
+</body> 
+</html>
